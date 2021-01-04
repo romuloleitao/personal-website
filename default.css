@@ -8,6 +8,8 @@
     --secondaryText: #4b5156;
 
     --themeDotBorder: #24292e;
+
+    --previewBg: rgb(251, 249, 243, 0.8);
 }
 
 html, body {
@@ -135,6 +137,8 @@ h6 { font-size: 16px;}
 
 .left-column {
     grid-area: left-column;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 #profile_pic {
@@ -172,8 +176,37 @@ h6 { font-size: 16px;}
     border-width: 5px;
 }
 
+#light-mode {
+    background-color: #fff;
+}
+
+#blue-mode {
+    background-color: #192734;
+}
+
+#green-mode {
+    background-color: #78866b;
+}
+
+#purple-mode {
+    background-color: #7E4C74;
+}
+
+#settings-note {
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+}
+
 .right-column {
     grid-area: right-column;
+}
+
+#preview {
+    width: 300px;
+    border: 1.5px solid #17a2b8;
+    background-color: var(--previewBg);
+    padding: 15px;
 }
 
 @media screen and (max-width: 1200px) {
