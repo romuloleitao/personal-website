@@ -341,6 +341,16 @@ h6 { font-size: 16px;}
     margin-bottom: 50px;
 }
 
+.input-field {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--secondaryColor);
+    border-radius: 5px;
+    border: 1px solid var(--borderColor);
+    font-size: 14px;
+}
+
 @media screen and (max-width: 1200px) {
     .main-container {
         width: 95%;
