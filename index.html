@@ -161,7 +161,7 @@
     <section class="s2">
         <div class="main-container">
             <h3 style="text-align: center;">Get In Touch</h3>
-            <form id="contact-form">
+            <form action="POST" data-netlify="true" id="contact-form">
                 <label>Name</label>
                 <input class="input-field" type="text" name="name">
 
@@ -173,6 +173,7 @@
 
                 <label>Message</label>
                 <textarea class="input-field" type="text" name="message"></textarea>
+                <div data-netlify-recaptcha="true"></div>
 
                 <input id="submit-btn" type="submit" value="Send">
             </form>
