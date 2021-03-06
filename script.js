@@ -1,4 +1,13 @@
+let themeFromUser = document.getElementById('theme-style');
+let themeFromLocalStorage = localStorage.getItem('theme');
+
 function setColorTheme(fileNameCSS) {
-    var theme = document.getElementById('theme-style');
-    theme.href = fileNameCSS;
+    themeFromUser.href = fileNameCSS;
+    localStorage.setItem('theme', fileNameCSS);
+}
+
+if (themeFromLocalStorage == null) {
+    setColorTheme('default.css');
+} else {
+    setColorTheme(themeFromLocalStorage)
 }
